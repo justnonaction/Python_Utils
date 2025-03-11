@@ -21,7 +21,7 @@ def ips_handle(ips):
     pattern_ip = re.compile(r"^(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)$")
     pattern_ips = re.compile(
         r"^(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)/([0-9]|[1-2]\d|3[0-2])$")
-    res = []
+
     if pattern_ip.match(ips):
         ip_list = [ips]
         return ip_list
